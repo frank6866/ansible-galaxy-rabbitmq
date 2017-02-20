@@ -1,2 +1,14 @@
 ---
 # defaults file for rabbitmq
+
+#rabbitmq_users:
+#  - user: openstack
+#    password: change_me
+#    vhost: /
+#    configure_priv: .*
+#    read_priv: .*
+#    write_priv: .*
+#    tags: administrator
+#    state: present
+
+rabbitmq_delete_guest_user: True

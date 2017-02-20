@@ -1,14 +1,2 @@
 ---
 # vars file for rabbitmq
-
-rabbitmq_user:
-  - user: openstack
-    password: change_me
-    vhost: /
-    configure_priv: .*
-    read_priv: .*
-    write_priv: .*
-    tags: administrator
-    state: present
-
-delete_guest_user: True

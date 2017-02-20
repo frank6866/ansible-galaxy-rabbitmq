@@ -1,14 +1,15 @@
 Rabbitmq
-=======
+========
 
 Install rabbitmq.
 
 Role Variables
 --------------
 
+
 ```
-rabbitmq_user:
-  - user: frank
+rabbitmq_users:
+  - user: openstack
     password: change_me
     vhost: /
     configure_priv: .*
@@ -17,7 +18,7 @@ rabbitmq_user:
     tags: administrator
     state: present
 
-delete_guest_user: True
+rabbitmq_delete_guest_user: True
 ```
 
 Example Playbook
@@ -27,7 +28,7 @@ Example Playbook
 - hosts: rabbitmq
   become: true
   roles:
-  - frank6866.rabbitmq
+  - /path/to/rabbitmq
 ```
 
 Ref
